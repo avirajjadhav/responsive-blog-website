@@ -1,54 +1,438 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog webpage</title>
-    
+
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="body_container">
-    <header class="header_section">
-      <nav>
-        <ul class="sidebar">
-          <!-- <li >
-            <a href="#">
-              <img src="img/Logo blog 1.png" alt="Logo" />
-            </a>
-          </li> -->
-          <li onclick=HideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Articles</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
+    <script src="script.js"></script>
+</head>
 
-        <ul>
-          <li class="logo">
-            <a href="#">
-              <img src="img/Logo blog 1.png" alt="Logo" />
-            </a>
-          </li>
-          <li class="hideOnMobile"><a href="#">Home</a></li>
-          <li class="hideOnMobile"><a href="#">Articles</a></li>
-          <li class="hideOnMobile"><a href="#">About</a></li>
-          <li class="hideOnMobile"><a href="#">Contact us</a></li>
-           <li  class="menu-button" onclick=ShowSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        </ul>
-      </nav>
-    </header>
+<body class="body_container">
+    <div class="container">
+        <header class="header_section">
+            <nav>
+                <ul class="sidebar">
+                    <li onclick="HideSidebar()">
+                        <a href="#">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="24px"
+                                viewBox="0 -960 960 960"
+                                width="24px"
+                                fill="#1f1f1f"
+                            >
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                                />
+                            </svg>
+                        </a>
+                    </li>
 
-    <main class="main_container"></main>
-    <script>
-      function ShowSidebar(){
-        const sidebar=document.querySelector('.sidebar')
-        sidebar.style.display='flex' 
-      }
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
 
-     function HideSidebar(){
-     const sidebar=document.querySelector('.sidebar')
-        sidebar.style.display='none' 
-     }
-    </script>
-  </body>
+                <ul>
+                    <li class="logo">
+                        <a href="#">
+                            <img src="img/Logo blog 1.png" alt="Logo" />
+                        </a>
+                    </li>
+
+                    <li class="hideOnMobile"><a href="#">Home</a></li>
+                    <li class="hideOnMobile"><a href="#">Articles</a></li>
+                    <li class="hideOnMobile"><a href="#">About</a></li>
+                    <li class="hideOnMobile"><a href="#">Contact us</a></li>
+
+                    <li class="menu-button" onclick="ShowSidebar()">
+                        <a href="#">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="24px"
+                                viewBox="0 -960 960 960"
+                                width="24px"
+                                fill="#1f1f1f"
+                            >
+                                <path
+                                    d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main_container">
+            <!-- card 1 -->
+
+            <div class="card_container">
+                <a href="#" class="card_image_container">
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="laptop with code image"
+                        class="card_image"
+                        loading="lazy"
+                    />
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_title">
+                            Web Development Trends 2026
+                        </h2>
+                    </a>
+
+                    <p class="card_description">
+                        Discover the latest technologies, frameworks, and tools
+                        shaping modern web development.
+                    </p>
+                </div>
+
+                <div class="card_footer">
+                    <div class="author_container">
+                        <div class="author_avatar_container">
+                            <img
+                                src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"
+                                alt="avatar"
+                                loading="lazy"
+                                class="author_avatar"
+                            />
+                        </div>
+
+                        <div class="author_info_container">
+                            <span class="author">Ethan Walker</span>
+                            <span class="date">June 12, 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="card_tag_container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <a href="#" class="card_image_container">
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="laptop with code image"
+                        class="card_image"
+                        loading="lazy"
+                    />
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_title">
+                            Web Development Trends 2026
+                        </h2>
+                    </a>
+
+                    <p class="card_description">
+                        Discover the latest technologies, frameworks, and tools
+                        shaping modern web development.
+                    </p>
+                </div>
+
+                <div class="card_footer">
+                    <div class="author_container">
+                        <div class="author_avatar_container">
+                            <img
+                                src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"
+                                alt="avatar"
+                                loading="lazy"
+                                class="author_avatar"
+                            />
+                        </div>
+
+                        <div class="author_info_container">
+                            <span class="author">Ethan Walker</span>
+                            <span class="date">June 12, 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="card_tag_container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 1 ends here -->
+             <div class="card_container">
+                <a href="#" class="card_image_container">
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="laptop with code image"
+                        class="card_image"
+                        loading="lazy"
+                    />
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_title">
+                            Web Development Trends 2026
+                        </h2>
+                    </a>
+
+                    <p class="card_description">
+                        Discover the latest technologies, frameworks, and tools
+                        shaping modern web development.
+                    </p>
+                </div>
+
+                <div class="card_footer">
+                    <div class="author_container">
+                        <div class="author_avatar_container">
+                            <img
+                                src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"
+                                alt="avatar"
+                                loading="lazy"
+                                class="author_avatar"
+                            />
+                        </div>
+
+                        <div class="author_info_container">
+                            <span class="author">Ethan Walker</span>
+                            <span class="date">June 12, 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="card_tag_container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <a href="#" class="card_image_container">
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="laptop with code image"
+                        class="card_image"
+                        loading="lazy"
+                    />
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_title">
+                            Web Development Trends 2026
+                        </h2>
+                    </a>
+
+                    <p class="card_description">
+                        Discover the latest technologies, frameworks, and tools
+                        shaping modern web development.
+                    </p>
+                </div>
+
+                <div class="card_footer">
+                    <div class="author_container">
+                        <div class="author_avatar_container">
+                            <img
+                                src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"
+                                alt="avatar"
+                                loading="lazy"
+                                class="author_avatar"
+                            />
+                        </div>
+
+                        <div class="author_info_container">
+                            <span class="author">Ethan Walker</span>
+                            <span class="date">June 12, 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="card_tag_container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <a href="#" class="card_image_container">
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="laptop with code image"
+                        class="card_image"
+                        loading="lazy"
+                    />
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_title">
+                            Web Development Trends 2026
+                        </h2>
+                    </a>
+
+                    <p class="card_description">
+                        Discover the latest technologies, frameworks, and tools
+                        shaping modern web development.
+                    </p>
+                </div>
+
+                <div class="card_footer">
+                    <div class="author_container">
+                        <div class="author_avatar_container">
+                            <img
+                                src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"
+                                alt="avatar"
+                                loading="lazy"
+                                class="author_avatar"
+                            />
+                        </div>
+
+                        <div class="author_info_container">
+                            <span class="author">Ethan Walker</span>
+                            <span class="date">June 12, 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="card_tag_container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <a href="#" class="card_image_container">
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="laptop with code image"
+                        class="card_image"
+                        loading="lazy"
+                    />
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_title">
+                            Web Development Trends 2026
+                        </h2>
+                    </a>
+
+                    <p class="card_description">
+                        Discover the latest technologies, frameworks, and tools
+                        shaping modern web development.
+                    </p>
+                </div>
+
+                <div class="card_footer">
+                    <div class="author_container">
+                        <div class="author_avatar_container">
+                            <img
+                                src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"
+                                alt="avatar"
+                                loading="lazy"
+                                class="author_avatar"
+                            />
+                        </div>
+
+                        <div class="author_info_container">
+                            <span class="author">Ethan Walker</span>
+                            <span class="date">June 12, 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="card_tag_container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <a href="#" class="card_image_container">
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="laptop with code image"
+                        class="card_image"
+                        loading="lazy"
+                    />
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_title">
+                            Web Development Trends 2026
+                        </h2>
+                    </a>
+
+                    <p class="card_description">
+                        Discover the latest technologies, frameworks, and tools
+                        shaping modern web development.
+                    </p>
+                </div>
+
+                <div class="card_footer">
+                    <div class="author_container">
+                        <div class="author_avatar_container">
+                            <img
+                                src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"
+                                alt="avatar"
+                                loading="lazy"
+                                class="author_avatar"
+                            />
+                        </div>
+
+                        <div class="author_info_container">
+                            <span class="author">Ethan Walker</span>
+                            <span class="date">June 12, 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="card_tag_container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <a href="#" class="card_image_container">
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="laptop with code image"
+                        class="card_image"
+                        loading="lazy"
+                    />
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_title">
+                            Web Development Trends 2026
+                        </h2>
+                    </a>
+
+                    <p class="card_description">
+                        Discover the latest technologies, frameworks, and tools
+                        shaping modern web development.
+                    </p>
+                </div>
+
+                <div class="card_footer">
+                    <div class="author_container">
+                        <div class="author_avatar_container">
+                            <img
+                                src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"
+                                alt="avatar"
+                                loading="lazy"
+                                class="author_avatar"
+                            />
+                        </div>
+
+                        <div class="author_info_container">
+                            <span class="author">Ethan Walker</span>
+                            <span class="date">June 12, 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="card_tag_container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
 </html>
