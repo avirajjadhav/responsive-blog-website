@@ -125,7 +125,7 @@ nav svg {
 .card_container {
   display: flex;
   flex-direction: column;
-
+  /* height: 22rem; */
   border: 1px solid #ddd;
   border-radius: 10px;
 
@@ -162,14 +162,14 @@ nav svg {
 ========================= */
 
 .card_title_container {
-  padding: 1rem;
+  padding: rem;
 }
 
 .card_title {
   font-size: 1rem;
   font-weight: 600;
   color: rgb(25, 22, 23);
-
+   padding: 0 0.2rem;
   margin-bottom: 0.5rem;
 }
 
@@ -182,20 +182,12 @@ nav svg {
   color: rgb(70, 70, 70);
   line-height: 1.6;
   min-height: 65px;
+  /* border: 2px solid red; */
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+  padding: 0 0.3rem;
 }
-/* =========================
-   CARD FOOTER
-========================= */
 
-/* .card_footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 1rem;
-
-  margin-top: auto;
-} */
 
 .card_footer {
   display: flex;
